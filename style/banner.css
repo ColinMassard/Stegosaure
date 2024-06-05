@@ -1,0 +1,3 @@
+.gradient-red-to-dark-red{
+  background: linear-gradient(120.51deg, var(--red-primary) 0%, var(--red-dark) 100%)
+}

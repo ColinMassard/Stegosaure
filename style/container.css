@@ -1,0 +1,10 @@
+.max-w-container-lg {
+  max-width: 86rem;
+}
+.w-container {
+  width: 90%;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}

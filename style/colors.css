@@ -1,0 +1,11 @@
+:root {
+  --red-primary: #950E0E;
+  --red-light: #FAECEC;
+  --red-dark: #460202;
+  --red-footer: #E5B1B1;
+  --label-veg: #D9FFD9;
+}
+
+.text-primary{
+  color: var(--red-primary);
+}
