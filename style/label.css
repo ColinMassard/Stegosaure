@@ -7,6 +7,24 @@
   background-color: var(--label-halal);
 }
 
+.label-spicy{
+  background-color: var(--label-spicy);
+}
+
+
+
 .product:last-child{
   border: 0 !important;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.shadow-menu{
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;;
+}
+
+.gray-light{
+  color: #CFD6DC;
+  fill: #CFD6DC;
 }

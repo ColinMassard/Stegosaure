@@ -5,7 +5,9 @@
   --red-footer: #E5B1B1;
   --label-veg: #D9FFD9;
   --label-halal: #F1B8B8;
+  --label-spicy: #FFD3B4;
 }
+
 
 .text-primary{
   color: var(--red-primary);
