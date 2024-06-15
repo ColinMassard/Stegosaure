@@ -4,3 +4,7 @@
 .banner{
   max-height: 36rem;
 }
+
+.rounded-20p {
+  border-radius: 20px;
+}

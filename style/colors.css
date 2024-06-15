@@ -4,8 +4,14 @@
   --red-dark: #460202;
   --red-footer: #E5B1B1;
   --label-veg: #D9FFD9;
+  --label-halal: #F1B8B8;
 }
 
 .text-primary{
   color: var(--red-primary);
 }
+
+.bg-primary{
+  background-color: var(--red-primary);
+}
+

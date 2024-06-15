@@ -31,7 +31,7 @@
 @media only screen and (max-width: 600px) {
   .about__content__box {
     margin: auto;
-    width: 38.063rem;
+    width: 90%;
  }
   .about__content .about__content__box {
     margin-bottom: 6.25rem;

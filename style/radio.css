@@ -1,0 +1,41 @@
+
+.radio-toolbar input[type="radio"] {
+  display: none;
+}
+.radio-toolbar label {
+  display: inline-block;
+  width: 100%;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #7C7C7C;
+  font-weight: medium;
+  transition: all ease-in-out 0.3s;
+  background-color: #F2F2F2;
+  text-align: center;
+  border-radius: 1rem;
+}
+.radio-toolbar input[type="radio"]:checked+label {
+  background-color: var(--red-primary);;
+  color:#fff;
+}
+
+@media only screen and (min-width: 1024px) {
+  .radio-toolbar label {
+    display: inline-block;
+    padding: 6px 16px;
+    cursor: pointer;
+    font-size: 16px;
+    color: black;
+    font-weight: medium;
+    transition: all ease-in-out 0.3s;
+    background-color: var(--red-light);
+  }
+  .radio-toolbar input[type="radio"]:checked+label {
+    background-color: black;
+    color:#fff;
+    border-radius: 999px;
+  }
+}
+

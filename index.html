@@ -9,20 +9,22 @@
   </head>
 
   <body>
-    <header class="py-3 flex items-center justify-center">
+    <header class="py-3 items-center justify-center hidden lg:flex">
       <h2 class="text-white text-center max-w-lg leading-normal font-medium">Ouvert du lundi au vendredi 12-00h. Happy Hour de 18h à 20h</h2>
     </header>
     <main>
       <div class="w-container mx-auto max-h-screen">
-        <div class="flex justify-between mt-3">
-          <div class="w-1/3"></div>
-    
-          <div class="w-1/3 flex justify-center items-center">
-            <img src="img/logo.png" alt="max-w-48">
+        <div class="flex justify-between items-center mt-5 lg:mt-3">
+          <div class="w-auto lg:w-1/3">
+            <h2 class="text-black text-2xl font-semibold lg:hidden">Bienvenue chez</h2>
           </div>
-          <div class="w-1/3 flex justify-end">
+    
+          <div class="w-auto flex justify-center items-center">
+            <img src="img/logo.png" class="w-28 lg:max-w-48">
+          </div>
+          <div class="w-1/2 justify-end hidden lg:flex lg:w-1/3">
             <div class="flex justify-center items-center space-x-3">
-              <a class="w-8 h-8 bg-primary rounded flex items-center justify-center fill-black" href="https://www.facebook.com/profile.php?id=100090652296724" target="_blank">
+              <a class="w-8 h-8 bg-primary-500 rounded flex items-center justify-center fill-black" href="https://www.facebook.com/profile.php?id=100090652296724" target="_blank">
                 <svg class="h-6" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 320 512"><path d="M279.1 288l14.2-92.7h-88.9v-60.1c0-25.4 12.4-50.1 52.2-50.1h40.4V6.3S260.4 0 225.4 0c-73.2 0-121.1 44.4-121.1 124.7v70.6H22.9V288h81.4v224h100.2V288z"></path></svg>
               </a>
               <a class="w-8 h-8 bg-primary-500 rounded flex items-center justify-center fill-black" href="https://www.instagram.com/dbtpartners/" target="_blank">
@@ -35,8 +37,8 @@
           </div>
         </div>
     
-        <nav class="mt-6 max-w-md mx-auto">
-          <ul class="flex items-center justify-between text-lg">
+        <nav class="mt-6 max-w-md mx-auto hidden lg:block">
+          <ul class="flex items-center justify-between text-lg ">
             <li><a href="#">Le Restaurant</a></li>
             <li><a href="#">La Carte</a></li>
             <li><a href="#">Adresse</a></li>
@@ -44,7 +46,13 @@
           </ul>
         </nav>
 
-        <div class="hero relative mt-12">
+        <div class="card bg-primary p-6 rounded-20p overflow-hidden mt-9 min-h-52 h-full lg:hidden relative">
+          <h2 class="text-2xl font-medium max-w-60 text-white mb-1">Obtenez notre offre de bienvenue</h2>
+          <p class="text-base max-w-60 text-white">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+          <img class="w-32 absolute bottom-0 right-0" src="img/coffee.png" alt="coffee">
+        </div>
+
+        <div class="hero relative mt-12 hidden lg:block">
           <div class="absolute top-0 left-0 rounded-xl flex items-center justify-center w-full h-full bg-black/35">
               <h1 class="max-w-96 text-center text-5xl leading-normal font-semibold text-white"> Le Restaurant L’Expérience</h1>
           </div>
@@ -53,69 +61,96 @@
       </div>
     </main>
 
-    <div class="mt-16">
+    <div class="mt-4 lg:mt-16">
       <div class="w-container mx-auto">
-        <h2 class="text-center text-5xl leading-none font-semibold">La carte</h2>
+        <h2 class="text-center text-5xl leading-none font-semibold hidden lg:block">La carte</h2>
 
-        <div class="grid grid-cols-3 gap-8 mt-8">
+        <div class="radio-toolbar grid grid-cols-3 gap-2.5 lg:flex lg:items-center lg:space-x-4">
           <div>
-            <img class="img-cover product-img rounded-lg overflow-hidden" src="img/cafe.png" alt="coffee">
-            <div class="flex items-center justify-between mt-5">
-              <p class="text-lg font-medium">Expresso Italien</p>
-              <p class="label-veg px-4 py-2 flex items-center space-x-2 rounded-lg">
-                <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M4.26509 17.2854C2.99078 17.1948 2.32459 16.7354 1.98242 16.2257C2.048 14.9847 2.23801 13.439 2.772 12.0362C3.07814 11.233 3.51259 10.5058 4.04554 9.97122C4.62825 9.33404 5.16669 8.84376 5.70919 8.43948C6.78004 7.64637 7.71948 7.30087 8.01678 7.17933C8.31748 7.06332 8.85667 6.84525 9.50912 6.60243C10.1595 6.37971 10.9472 6.05741 11.6197 5.66335C12.9982 4.90955 14.1408 4.0589 14.139 4.05859C14.1413 4.0589 12.9196 4.736 11.5001 5.29802C10.7839 5.60333 10.0522 5.80406 9.36912 5.96216C8.69698 6.13504 8.12929 6.31107 7.81667 6.43199C7.23212 6.67604 3.72982 7.79672 1.94094 11.5534C1.53631 12.5129 1.28253 13.5055 1.11818 14.4356C0.713802 14.2074 0.210399 13.7657 0.0732722 12.9481C-0.165728 11.5237 -0.0327481 7.24953 3.8405 4.8752C7.71403 2.50116 12.0386 2.97566 14.1082 2.27938C16.1775 1.5831 17 0 17 0C17 0 15.2754 16.114 4.26509 17.2854Z" fill="#007B00"/>
-                </svg>
-                <span>Veg</span>
-              </p>
-            </div>
-            <div class="flex items-center justify-between space-x-5 mt-2">
-              <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pulvinar volutpat.</p>
-              <p class="text-lg font-medium">€11.40</p>
-            </div>
+            <input type="radio" id="all" name="radios" value="all" checked>
+            <label for="all">Tous</label>
           </div>
-
           <div>
-            <img class="img-cover product-img rounded-lg overflow-hidden" src="img/cafe.png" alt="coffee">
-            <div class="flex items-center justify-between mt-5">
-              <p class="text-lg font-medium">Expresso Italien</p>
-              <p class="label-veg px-4 py-2 flex items-center space-x-2 rounded-lg">
-                <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M4.26509 17.2854C2.99078 17.1948 2.32459 16.7354 1.98242 16.2257C2.048 14.9847 2.23801 13.439 2.772 12.0362C3.07814 11.233 3.51259 10.5058 4.04554 9.97122C4.62825 9.33404 5.16669 8.84376 5.70919 8.43948C6.78004 7.64637 7.71948 7.30087 8.01678 7.17933C8.31748 7.06332 8.85667 6.84525 9.50912 6.60243C10.1595 6.37971 10.9472 6.05741 11.6197 5.66335C12.9982 4.90955 14.1408 4.0589 14.139 4.05859C14.1413 4.0589 12.9196 4.736 11.5001 5.29802C10.7839 5.60333 10.0522 5.80406 9.36912 5.96216C8.69698 6.13504 8.12929 6.31107 7.81667 6.43199C7.23212 6.67604 3.72982 7.79672 1.94094 11.5534C1.53631 12.5129 1.28253 13.5055 1.11818 14.4356C0.713802 14.2074 0.210399 13.7657 0.0732722 12.9481C-0.165728 11.5237 -0.0327481 7.24953 3.8405 4.8752C7.71403 2.50116 12.0386 2.97566 14.1082 2.27938C16.1775 1.5831 17 0 17 0C17 0 15.2754 16.114 4.26509 17.2854Z" fill="#007B00"/>
-                </svg>
-                <span>Veg</span>
-              </p>
-            </div>
-            <div class="flex items-center justify-between space-x-5 mt-2">
-              <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pulvinar volutpat.</p>
-              <p class="text-lg font-medium">€11.40</p>
-            </div>
+            <input type="radio" id="hot" name="radios" value="hot">
+            <label for="hot">Chaud</label>
           </div>
-
           <div>
-            <img class="img-cover product-img rounded-lg overflow-hidden" src="img/cafe.png" alt="coffee">
-            <div class="flex items-center justify-between mt-5">
-              <p class="text-lg font-medium">Expresso Italien</p>
-              <p class="label-veg px-4 py-2 flex items-center space-x-2 rounded-lg">
-                <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M4.26509 17.2854C2.99078 17.1948 2.32459 16.7354 1.98242 16.2257C2.048 14.9847 2.23801 13.439 2.772 12.0362C3.07814 11.233 3.51259 10.5058 4.04554 9.97122C4.62825 9.33404 5.16669 8.84376 5.70919 8.43948C6.78004 7.64637 7.71948 7.30087 8.01678 7.17933C8.31748 7.06332 8.85667 6.84525 9.50912 6.60243C10.1595 6.37971 10.9472 6.05741 11.6197 5.66335C12.9982 4.90955 14.1408 4.0589 14.139 4.05859C14.1413 4.0589 12.9196 4.736 11.5001 5.29802C10.7839 5.60333 10.0522 5.80406 9.36912 5.96216C8.69698 6.13504 8.12929 6.31107 7.81667 6.43199C7.23212 6.67604 3.72982 7.79672 1.94094 11.5534C1.53631 12.5129 1.28253 13.5055 1.11818 14.4356C0.713802 14.2074 0.210399 13.7657 0.0732722 12.9481C-0.165728 11.5237 -0.0327481 7.24953 3.8405 4.8752C7.71403 2.50116 12.0386 2.97566 14.1082 2.27938C16.1775 1.5831 17 0 17 0C17 0 15.2754 16.114 4.26509 17.2854Z" fill="#007B00"/>
-                </svg>
-                <span>Veg</span>
-              </p>
-            </div>
-            <div class="flex items-center justify-between space-x-5 mt-2">
-              <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pulvinar volutpat.</p>
-              <p class="text-lg font-medium">€11.40</p>
-            </div>
+            <input type="radio" id="cold" name="radios" value="cold">
+            <label for="cold">Froid</label>
           </div>
         </div>
+
+
+        <div class="grid grid-cols-1 gap-2 mt-8 lg:grid-cols-3 lg:gap-8 lg:grid">
+          <div class="product flex flex-row-reverse lg:grid pb-2 border-b-2 border-solid border-gray lg:border-0" data-type="hot">
+            <img class="img-cover product-img rounded-lg overflow-hidden aspect-square max-w-24 lg:max-w-full lg:aspect-auto" src="img/cafe.png" alt="coffee">
+            <div>
+              <div class="flex items-center justify-between lg:mt-5">
+                <p class="product-title text-lg font-medium">Expresso Italien</p>
+                <div class="product-label">
+                  <p class="label-veg px-4 py-2 items-center space-x-2 rounded-lg hidden lg:flex">
+                    <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4.26509 17.2854C2.99078 17.1948 2.32459 16.7354 1.98242 16.2257C2.048 14.9847 2.23801 13.439 2.772 12.0362C3.07814 11.233 3.51259 10.5058 4.04554 9.97122C4.62825 9.33404 5.16669 8.84376 5.70919 8.43948C6.78004 7.64637 7.71948 7.30087 8.01678 7.17933C8.31748 7.06332 8.85667 6.84525 9.50912 6.60243C10.1595 6.37971 10.9472 6.05741 11.6197 5.66335C12.9982 4.90955 14.1408 4.0589 14.139 4.05859C14.1413 4.0589 12.9196 4.736 11.5001 5.29802C10.7839 5.60333 10.0522 5.80406 9.36912 5.96216C8.69698 6.13504 8.12929 6.31107 7.81667 6.43199C7.23212 6.67604 3.72982 7.79672 1.94094 11.5534C1.53631 12.5129 1.28253 13.5055 1.11818 14.4356C0.713802 14.2074 0.210399 13.7657 0.0732722 12.9481C-0.165728 11.5237 -0.0327481 7.24953 3.8405 4.8752C7.71403 2.50116 12.0386 2.97566 14.1082 2.27938C16.1775 1.5831 17 0 17 0C17 0 15.2754 16.114 4.26509 17.2854Z" fill="#007B00"/>
+                    </svg>
+                    <span>Veg</span>
+                  </p>
+                </div>
+              </div>
+              <div class="items-center justify-between mt-2 lg:flex lg:space-x-5">
+                <p class="product-description text-xs lg:text-base text-gray-400 mr-2 lg:mr-0">Italien ipsum dolor sit amet, consectetur adipiscing elit. Nullam pulvinar volutpat.</p>
+                <p class="product-price text-xs lg:text-lg font-medium mt-2 lg:mt-0">8.40</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="product flex flex-row-reverse lg:grid pb-2 border-b-2 border-solid border-gray lg:border-0" data-type="cold">
+            <img class="img-cover product-img rounded-lg overflow-hidden aspect-square max-w-24 lg:max-w-full lg:aspect-auto" src="img/cafe.png" alt="coffee">
+            <div>
+              <div class="flex items-center justify-between lg:mt-5">
+                <p class="product-title text-lg font-medium">Expresso Français</p>
+                <div class="product-label">
+                  <p class="label-halal px-4 py-2 items-center space-x-2 rounded-lg hidden lg:flex">
+                    <svg width="17" height="9" viewBox="0 0 17 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.58 4.76C13.5652 4.76038 14.2471 5.30982 15.13 5.78C15.9157 6.09922 17 5.95 17 5.95L16.32 7.14C16.32 7.14 15.2454 6.9302 13.94 7.48C12.7635 7.94468 11.6802 8.0218 11.39 7.99C11.0137 8.0218 10.1794 7.9673 9.69 6.97C9.36265 6.02823 9.35 4.42 9.35 4.42V3.4C9.35 3.4 9.17783 4.55931 8.84 5.78C8.52845 6.43808 8.39658 6.80704 7.99 7.31C7.49006 7.88473 6.79265 8.29785 6.12 8.5C4.96824 8.7782 3.74 8.67 3.74 8.67C3.74 8.67 5.07292 8.23563 5.95 7.65C6.82391 7.11885 7.88894 6.43807 8.5 4.93C9.07507 3.32566 9.18797 1.50173 9.35 1.19C9.65508 0.979139 9.82566 1.79631 9.86 2.21C9.87678 2.68978 10.03 4.93 10.03 4.93C10.03 4.93 10.1071 6.62821 10.71 6.97C11.2516 7.16708 12.5133 7.07131 13.26 6.8C14.0044 6.60915 14.11 6.46 14.11 6.46C14.11 6.46 12.6738 5.60227 11.9 5.95C11.2021 6.22704 10.9141 6.60915 10.88 6.63C10.9141 6.60915 11.5287 4.76038 12.58 4.76ZM4.93 2.04C4.93 2.04 4.72539 3.41858 5.44 3.74C6.17097 4.12316 6.48691 4.08418 6.8 4.59C7.20299 4.94113 7.65 6.12 7.65 6.12C7.65 6.12 7.81989 4.97973 7.31 3.91C6.73812 2.94252 4.93 2.04 4.93 2.04ZM3.49019 0.85L4.16187 0C4.16187 0 4.26174 0.47996 4.41991 0.734603C4.57808 0.989245 4.83355 1.19 4.83355 1.19C4.83355 1.19 4.49771 1.7152 4.49771 2.24705C4.49771 2.77889 4.95862 4.42 4.95862 5.28492C4.95862 5.28492 4.97852 5.80221 4.92579 6.72857C4.92579 6.72857 4.92002 7.19785 4.35486 7.98157C4.35486 7.98157 3.62733 8.84 2.14682 8.84C2.14682 8.84 1.01713 8.7765 0.444395 8.16C0.444395 8.16 0.0969688 7.86328 0 7.15287C0 7.15287 0 6.8 0.157385 6.31052C0.157385 6.31052 0.366253 5.78665 0.803459 5.1C0.803459 5.1 0.164618 6.31581 0.444395 7.02856C0.724171 7.7413 1.63449 7.90173 2.14682 7.90173C2.65916 7.90173 3.32118 7.72086 3.82839 7.34279C4.41991 6.90186 4.35486 5.90222 4.35486 5.28492C4.35486 4.66761 4.04938 3.12434 4.04938 3.12434C3.98641 2.70385 3.70105 1.77429 3.65811 1.53C3.61517 1.28571 3.49019 0.85 3.49019 0.85Z" fill="#950E0E"/>
+                    </svg>
+                    <span>Halal</span>
+                  </p>
+                </div>
+              </div>
+              <div class="items-center justify-between mt-2 lg:flex lg:space-x-5">
+                <p class="product-description text-xs lg:text-base text-gray-400 mr-2 lg:mr-0">Français ipsum dolor sit amet, consectetur adipiscing elit. Nullam pulvinar volutpat.</p>
+                <p class="product-price text-xs lg:text-lg font-medium mt-2 lg:mt-0">9.40</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="product flex flex-row-reverse lg:grid pb-2 border-b-2 border-solid border-gray lg:border-0" data-type="hot">
+            <img class="img-cover product-img rounded-lg overflow-hidden aspect-square max-w-24 lg:max-w-full lg:aspect-auto" src="img/banner.png" alt="coffee">
+            <div>
+              <div class="flex items-center justify-between lg:mt-5">
+                <p class="product-title text-lg font-medium">Expresso Anglais</p>
+                <div class="product-label">
+                  <p class="label-veg px-4 py-2 items-center space-x-2 rounded-lg hidden lg:flex">
+                    <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4.26509 17.2854C2.99078 17.1948 2.32459 16.7354 1.98242 16.2257C2.048 14.9847 2.23801 13.439 2.772 12.0362C3.07814 11.233 3.51259 10.5058 4.04554 9.97122C4.62825 9.33404 5.16669 8.84376 5.70919 8.43948C6.78004 7.64637 7.71948 7.30087 8.01678 7.17933C8.31748 7.06332 8.85667 6.84525 9.50912 6.60243C10.1595 6.37971 10.9472 6.05741 11.6197 5.66335C12.9982 4.90955 14.1408 4.0589 14.139 4.05859C14.1413 4.0589 12.9196 4.736 11.5001 5.29802C10.7839 5.60333 10.0522 5.80406 9.36912 5.96216C8.69698 6.13504 8.12929 6.31107 7.81667 6.43199C7.23212 6.67604 3.72982 7.79672 1.94094 11.5534C1.53631 12.5129 1.28253 13.5055 1.11818 14.4356C0.713802 14.2074 0.210399 13.7657 0.0732722 12.9481C-0.165728 11.5237 -0.0327481 7.24953 3.8405 4.8752C7.71403 2.50116 12.0386 2.97566 14.1082 2.27938C16.1775 1.5831 17 0 17 0C17 0 15.2754 16.114 4.26509 17.2854Z" fill="#007B00"/>
+                    </svg>
+                    <span>Veg</span>
+                  </p>
+                </div>
+              </div>
+              <div class="items-center justify-between mt-2 lg:flex lg:space-x-5">
+                <p class="product-description text-xs lg:text-base text-gray-400 mr-2 lg:mr-0">Anglais ipsum dolor sit amet, consectetur adipiscing elit. Nullam pulvinar volutpat.</p>
+                <p class="product-price text-xs lg:text-lg font-medium mt-2 lg:mt-0">€10.40</p>
+              </div>
+            </div>
+          </div>
 
       </div>
     </div>
 
     <div class="mt-16">
       <div class="w-container mx-auto ">
-        <div class="flex items-center justify-center h-96 rounded-xl overflow-hidden">
+        <div class="flex items-center justify-center h-96 rounded-xl overflow-hidden hidden lg:flex">
           <div class="flex flex-col justify-between p-8 h-full gradient-red-to-dark-red w-full lg:w-5/12">
             <div class="max-w-96">
               <div class="font-bold text-2xl  text-white leading-normal lg:text-32">Obtenez notre<br>offre de bienvenue</div>
@@ -124,7 +159,7 @@
 
             <div class="flex justify-end"><a class="p-3 bg-white text-primary font-semibold text-base transition-all ease-in-out duration-500 lg:px-5 lg:py-3 hover:opacity-75 rounded-full" href="tel:+">S’inscrire</a></div>
           </div>
-          <div class="hidden h-full lg:w-7/12 lg:block"><img class="img-cover" src="img/banner.png"></div>
+          <div class="h-full lg:w-7/12"><img class="img-cover" src="img/banner.png"></div>
         </div>
       </div>
     </div>
@@ -139,7 +174,7 @@
       <section class="about__content about__content--left">
         <div class="about__content__wrapper w-full">
           <div class="about__content__box">
-            <p class="about__content__label">Le Restaurant</p>
+            <p class="about__content__label">Le Restau</p>
             <div class="about__content__description">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus volutpat consequat elementum. </p>
               <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Ut rutrum justo quis velit malesuada elementum. Curabitur lacinia sollicitudin mi, id vestibulum quam consequat vel. </p>
@@ -152,7 +187,7 @@
       </section>
     </div>
 
-    <div class="mt-16 w-container mx-auto">
+    <div class="mt-16 w-container mx-auto hidden lg:block">
       <div class="banner relative mt-12">
         <div class="absolute top-16 left-16 rounded-xl max-w-md h-auto bg-white/80 rounded-lg z-20 px-8 py-12">
           <h1 class="text-5xl leading-none font-semibold text-black "> Le Restaurant</h1>
@@ -172,7 +207,36 @@
         <div class="absolute top-0 left-0 rounded-xl flex items-center justify-center w-full h-full bg-black/15"></div>
         <img class="banner img-cover rounded-xl w-full" src="img/horaire.png" alt="Hero">
       </div>
+    </div> 
+    
+    <div class="modal bg-black/30 fixed top-0 left-0 w-full h-full flex items-end hidden">
+      <div class="bg-white h-3/4 rounded-t-xl overflow-hidden w-full shadow-lg relative">
+        <div class="close-modal bg-white rounded-full absolute w-8 h-8 right-5 top-3 flex items-center justify-center">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 18L18 6M6 6L18 18" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <img class="product-img img h-56 w-full img-cover h-full" src="img/cafe.png" alt="coffee">
+        <div class="w-container mx-auto">
+          <div class="flex items-center justify-between mt-5">
+            <p class="product-title text-lg font-medium">Expresso Italien</p>
+            <div class="product-label">
+              <p class="label-veg px-4 py-2 items-center space-x-2 rounded-lg flex">
+                <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4.26509 17.2854C2.99078 17.1948 2.32459 16.7354 1.98242 16.2257C2.048 14.9847 2.23801 13.439 2.772 12.0362C3.07814 11.233 3.51259 10.5058 4.04554 9.97122C4.62825 9.33404 5.16669 8.84376 5.70919 8.43948C6.78004 7.64637 7.71948 7.30087 8.01678 7.17933C8.31748 7.06332 8.85667 6.84525 9.50912 6.60243C10.1595 6.37971 10.9472 6.05741 11.6197 5.66335C12.9982 4.90955 14.1408 4.0589 14.139 4.05859C14.1413 4.0589 12.9196 4.736 11.5001 5.29802C10.7839 5.60333 10.0522 5.80406 9.36912 5.96216C8.69698 6.13504 8.12929 6.31107 7.81667 6.43199C7.23212 6.67604 3.72982 7.79672 1.94094 11.5534C1.53631 12.5129 1.28253 13.5055 1.11818 14.4356C0.713802 14.2074 0.210399 13.7657 0.0732722 12.9481C-0.165728 11.5237 -0.0327481 7.24953 3.8405 4.8752C7.71403 2.50116 12.0386 2.97566 14.1082 2.27938C16.1775 1.5831 17 0 17 0C17 0 15.2754 16.114 4.26509 17.2854Z" fill="#007B00"/>
+                </svg>
+                <span>Veg</span>
+              </p>
+            </div>
+          </div>
+          <div class="items-center justify-between lg:mt-2 lg:space-x-5">
+            <p class="product-price text-lg lg:text-lg font-medium text-gray text-medium">00.00</p>
+            <p class="product-description text-base lg:text-base text-gray-400 mr-2 mt-2 lg:mr-0">Modal ipsum dolor sit amet, consectetur adipiscing elit. Nullam pulvinar volutpat.</p>
+          </div>
+        </div>
+      </div>
     </div>
+
 
     <footer class="py-24 bg-grey-light mt-8">
       <div class="w-container max-w-container-faq mx-auto">
@@ -191,5 +255,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/animate.js"></script>
   </body>
 </html>

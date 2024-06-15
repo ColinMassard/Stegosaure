@@ -1,3 +1,12 @@
 .label-veg{
   background-color: var(--label-veg);
 }
+
+
+.label-halal{
+  background-color: var(--label-halal);
+}
+
+.product:last-child{
+  border: 0 !important;
+}
