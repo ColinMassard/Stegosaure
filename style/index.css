@@ -3,15 +3,15 @@
 @import "layout/colors.css";
 @import "layout/base.css";
 @import "layout/container.css";
-@import "header.css";
-@import "footer.css";
+@import "layout/header.css";
+@import "layout/footer.css";
 
 /* Atom */
-@import "img.css";
-@import "text-image.css";
-@import "label.css";
-@import "radio.css";
+@import "components/atom/img.css";
+@import "components/atom/text-image.css";
+@import "components/atom/label.css";
+@import "components/atom/radio.css";
 
 /* molecules */
-@import "banner.css";
-@import "hero.css";
+@import "components/molecules/banner.css";
+@import "components/molecules/hero.css";
