@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Projet Raph & Khalil</title>
-    <link rel="stylesheet" href="style/index.css" />
+    <link rel="stylesheet" href="../style/index.css" />
   </head>
 
   <body>
@@ -20,7 +20,7 @@
           </div>
     
           <a class="w-auto flex justify-center items-center" href="./index.html">
-            <img src="img/logo.png" class="w-28 lg:max-w-48">
+            <img src="../img/logo.png" class="w-28 lg:max-w-48">
           </a>
           <div class="w-1/2 justify-end hidden lg:flex lg:w-1/3">
             <div class="flex justify-center items-center space-x-3">
@@ -33,13 +33,13 @@
               <a class="w-8 h-8 bg-primary-dark rounded flex items-center justify-center fill-black" href="https://www.linkedin.com/company/dbtpartners/about/?viewAsMember=true" target="_blank">
                 <svg class="h-6" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512"><path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"></path></svg>
               </a>
-              <a class="w-8 h-8 bg-primary-dark rounded flex items-center justify-center fill-black" href="./en/menu.html" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="h-6" viewBox="0 0 36 36" aria-hidden="true" role="img" class="iconify iconify--twemoji" preserveAspectRatio="xMidYMid meet"><path fill="#00247D" d="M0 9.059V13h5.628zM4.664 31H13v-5.837zM23 25.164V31h8.335zM0 23v3.941L5.63 23zM31.337 5H23v5.837zM36 26.942V23h-5.631zM36 13V9.059L30.371 13zM13 5H4.664L13 10.837z"/><path fill="#CF1B2B" d="M25.14 23l9.712 6.801a3.977 3.977 0 0 0 .99-1.749L28.627 23H25.14zM13 23h-2.141l-9.711 6.8c.521.53 1.189.909 1.938 1.085L13 23.943V23zm10-10h2.141l9.711-6.8a3.988 3.988 0 0 0-1.937-1.085L23 12.057V13zm-12.141 0L1.148 6.2a3.994 3.994 0 0 0-.991 1.749L7.372 13h3.487z"/><path fill="#EEE" d="M36 21H21v10h2v-5.836L31.335 31H32a3.99 3.99 0 0 0 2.852-1.199L25.14 23h3.487l7.215 5.052c.093-.337.158-.686.158-1.052v-.058L30.369 23H36v-2zM0 21v2h5.63L0 26.941V27c0 1.091.439 2.078 1.148 2.8l9.711-6.8H13v.943l-9.914 6.941c.294.07.598.116.914.116h.664L13 25.163V31h2V21H0zM36 9a3.983 3.983 0 0 0-1.148-2.8L25.141 13H23v-.943l9.915-6.942A4.001 4.001 0 0 0 32 5h-.663L23 10.837V5h-2v10h15v-2h-5.629L36 9.059V9zM13 5v5.837L4.664 5H4a3.985 3.985 0 0 0-2.852 1.2l9.711 6.8H7.372L.157 7.949A3.968 3.968 0 0 0 0 9v.059L5.628 13H0v2h15V5h-2z"/><path fill="#CF1B2B" d="M21 15V5h-6v10H0v6h15v10h6V21h15v-6z"/></svg>
+              <a class="w-8 h-8 bg-primary-dark rounded flex items-center justify-center fill-black" href="../index.html" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="h-6" viewBox="0 0 36 36" aria-hidden="true" role="img" class="iconify iconify--twemoji" preserveAspectRatio="xMidYMid meet"><path fill="#ED2939" d="M36 27a4 4 0 0 1-4 4h-8V5h8a4 4 0 0 1 4 4v18z"/><path fill="#002495" d="M4 5a4 4 0 0 0-4 4v18a4 4 0 0 0 4 4h8V5H4z"/><path fill="#EEE" d="M12 5h12v26H12z"/></svg>
               </a>
             </div>
           </div>
         </div>
-
+    
         <nav class="mt-6 max-w-md mx-auto hidden lg:block">
           <ul class="flex items-center justify-between text-lg ">
             <li><a href="#le-restaurant">Le Restaurant</a></li>
@@ -49,21 +49,23 @@
         </nav>
 
         <nav class="shadow-menu mt-6 max-w-md mx-auto fixed bottom-0 left-0 w-full bg-white p-5 lg:hidden z-50 rounded-t-lg overflow-hidden">
-          <ul class="flex items-center justify-between text-BASE ">
+          <ul class="flex items-center justify-between text-lg ">
+
+
             <li>
-              <a class="h-10 gray-light py-2 space-x-1.5 flex items-center justify-center" href="./index.html#le-restaurant">
+              <a class="h-10 bg-primary rounded-full text-white px-2.5 py-2 space-x-1.5 flex items-center justify-center" href="./index.html#le-restaurant">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M11.4699 3.84099C11.6106 3.70054 11.8012 3.62165 11.9999 3.62165C12.1987 3.62165 12.3893 3.70054 12.5299 3.84099L21.2199 12.531C21.2892 12.6026 21.3719 12.6597 21.4635 12.699C21.555 12.7382 21.6534 12.7589 21.753 12.7597C21.8526 12.7605 21.9513 12.7415 22.0435 12.7037C22.1356 12.666 22.2194 12.6102 22.2897 12.5398C22.3601 12.4693 22.4158 12.3856 22.4534 12.2934C22.4911 12.2012 22.51 12.1024 22.5091 12.0028C22.5082 11.9032 22.4875 11.8048 22.4481 11.7134C22.4088 11.6219 22.3516 11.5391 22.2799 11.47L13.5909 2.77999C13.382 2.57106 13.134 2.40532 12.861 2.29225C12.588 2.17917 12.2954 2.12097 11.9999 2.12097C11.7045 2.12097 11.4119 2.17917 11.1389 2.29225C10.8659 2.40532 10.6179 2.57106 10.4089 2.77999L1.71894 11.47C1.64734 11.5392 1.59025 11.622 1.55098 11.7135C1.51172 11.805 1.49108 11.9035 1.49026 12.003C1.48944 12.1026 1.50846 12.2014 1.54622 12.2935C1.58397 12.3857 1.6397 12.4694 1.71015 12.5398C1.78061 12.6102 1.86437 12.6658 1.95656 12.7035C2.04875 12.7412 2.14752 12.7601 2.2471 12.7592C2.34669 12.7583 2.44509 12.7375 2.53658 12.6982C2.62806 12.6588 2.71079 12.6017 2.77994 12.53L11.4699 3.84099Z" fill="#CFD6DC"/>
-                  <path d="M12 5.43201L20.159 13.591C20.189 13.621 20.219 13.649 20.25 13.677V19.875C20.25 20.91 19.41 21.75 18.375 21.75H15C14.8011 21.75 14.6103 21.671 14.4697 21.5303C14.329 21.3897 14.25 21.1989 14.25 21V16.5C14.25 16.3011 14.171 16.1103 14.0303 15.9697C13.8897 15.829 13.6989 15.75 13.5 15.75H10.5C10.3011 15.75 10.1103 15.829 9.96967 15.9697C9.82902 16.1103 9.75 16.3011 9.75 16.5V21C9.75 21.1989 9.67098 21.3897 9.53033 21.5303C9.38968 21.671 9.19891 21.75 9 21.75H5.625C5.12772 21.75 4.65081 21.5525 4.29917 21.2008C3.94754 20.8492 3.75 20.3723 3.75 19.875V13.677C3.78111 13.6492 3.81146 13.6205 3.841 13.591L12 5.43201Z" fill="#CFD6DC"/>
+                  <path d="M11.4699 3.84099C11.6106 3.70054 11.8012 3.62165 11.9999 3.62165C12.1987 3.62165 12.3893 3.70054 12.5299 3.84099L21.2199 12.531C21.2892 12.6026 21.3719 12.6597 21.4635 12.699C21.555 12.7382 21.6534 12.7589 21.753 12.7597C21.8526 12.7605 21.9513 12.7415 22.0435 12.7037C22.1356 12.666 22.2194 12.6102 22.2897 12.5398C22.3601 12.4693 22.4158 12.3856 22.4534 12.2934C22.4911 12.2012 22.51 12.1024 22.5091 12.0028C22.5082 11.9032 22.4875 11.8048 22.4481 11.7134C22.4088 11.6219 22.3516 11.5391 22.2799 11.47L13.5909 2.77999C13.382 2.57106 13.134 2.40532 12.861 2.29225C12.588 2.17917 12.2954 2.12097 11.9999 2.12097C11.7045 2.12097 11.4119 2.17917 11.1389 2.29225C10.8659 2.40532 10.6179 2.57106 10.4089 2.77999L1.71894 11.47C1.64734 11.5392 1.59025 11.622 1.55098 11.7135C1.51172 11.805 1.49108 11.9035 1.49026 12.003C1.48944 12.1026 1.50846 12.2014 1.54622 12.2935C1.58397 12.3857 1.6397 12.4694 1.71015 12.5398C1.78061 12.6102 1.86437 12.6658 1.95656 12.7035C2.04875 12.7412 2.14752 12.7601 2.2471 12.7592C2.34669 12.7583 2.44509 12.7375 2.53658 12.6982C2.62806 12.6588 2.71079 12.6017 2.77994 12.53L11.4699 3.84099Z" fill="white"/>
+                  <path d="M12 5.43201L20.159 13.591C20.189 13.621 20.219 13.649 20.25 13.677V19.875C20.25 20.91 19.41 21.75 18.375 21.75H15C14.8011 21.75 14.6103 21.671 14.4697 21.5303C14.329 21.3897 14.25 21.1989 14.25 21V16.5C14.25 16.3011 14.171 16.1103 14.0303 15.9697C13.8897 15.829 13.6989 15.75 13.5 15.75H10.5C10.3011 15.75 10.1103 15.829 9.96967 15.9697C9.82902 16.1103 9.75 16.3011 9.75 16.5V21C9.75 21.1989 9.67098 21.3897 9.53033 21.5303C9.38968 21.671 9.19891 21.75 9 21.75H5.625C5.12772 21.75 4.65081 21.5525 4.29917 21.2008C3.94754 20.8492 3.75 20.3723 3.75 19.875V13.677C3.78111 13.6492 3.81146 13.6205 3.841 13.591L12 5.43201Z" fill="white"/>
                 </svg>
                 <span>Accueil</span>
               </a>
             </li>
             <li>
-              <a class="h-10 bg-primary rounded-full text-white px-2.5 py-2 space-x-1.5 flex items-center justify-center" href="./menu.html">
+              <a class="h-10 gray-light py-2 space-x-1.5 flex items-center justify-center" href="./menu.html">
                 <svg width="19" height="24" viewBox="0 0 19 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M16.712 4.40979H1.72623C0.773118 4.40979 0 5.18291 0 6.13602V22.2738C0 23.2269 0.773118 24 1.72623 24H16.712C17.6651 24 18.4383 23.2269 18.4383 22.2738V6.13602C18.4383 5.18291 17.6651 4.40979 16.712 4.40979ZM13.1859 19.2696H5.25154C4.82556 19.2696 4.48014 18.9242 4.48014 18.4982C4.48014 18.0722 4.82556 17.7268 5.25154 17.7268H13.1859C13.6118 17.7268 13.9573 18.0722 13.9573 18.4982C13.9573 18.9242 13.6118 19.2696 13.1859 19.2696ZM13.6676 16.1574H4.7707C4.34215 16.1574 3.9993 15.8146 3.9993 15.386C3.9993 14.9832 4.31643 14.6575 4.7107 14.6232H5.47954C5.47868 14.5915 5.47354 14.5606 5.47354 14.5289C5.47354 12.7204 6.7515 11.2196 8.44773 10.8647V9.90904C8.44773 9.48905 8.79057 9.13764 9.21913 9.13764C9.64769 9.13764 9.99053 9.48905 9.99053 9.90904V10.8647C11.6868 11.2196 12.9647 12.7204 12.9647 14.5289C12.9647 14.5606 12.9596 14.5915 12.9596 14.6232H13.7276C14.1218 14.6575 14.439 14.9832 14.439 15.386C14.439 15.8146 14.0961 16.1574 13.6676 16.1574Z" fill="white"/>
-                  <path d="M16.1362 2.86697V1.73215C16.1362 0.566474 15.0048 -0.264928 13.8992 0.0779182L4.88574 2.86697H16.1362Z" fill="white"/>
+                  <path d="M16.712 4.40979H1.72623C0.773118 4.40979 0 5.18291 0 6.13602V22.2738C0 23.2269 0.773118 24 1.72623 24H16.712C17.6651 24 18.4383 23.2269 18.4383 22.2738V6.13602C18.4383 5.18291 17.6651 4.40979 16.712 4.40979ZM13.1859 19.2696H5.25154C4.82556 19.2696 4.48014 18.9242 4.48014 18.4982C4.48014 18.0722 4.82556 17.7268 5.25154 17.7268H13.1859C13.6118 17.7268 13.9573 18.0722 13.9573 18.4982C13.9573 18.9242 13.6118 19.2696 13.1859 19.2696ZM13.6676 16.1574H4.7707C4.34215 16.1574 3.9993 15.8146 3.9993 15.386C3.9993 14.9832 4.31643 14.6575 4.7107 14.6232H5.47954C5.47868 14.5915 5.47354 14.5606 5.47354 14.5289C5.47354 12.7204 6.7515 11.2196 8.44773 10.8647V9.90904C8.44773 9.48905 8.79057 9.13764 9.21913 9.13764C9.64769 9.13764 9.99053 9.48905 9.99053 9.90904V10.8647C11.6868 11.2196 12.9647 12.7204 12.9647 14.5289C12.9647 14.5606 12.9596 14.5915 12.9596 14.6232H13.7276C14.1218 14.6575 14.439 14.9832 14.439 15.386C14.439 15.8146 14.0961 16.1574 13.6676 16.1574Z" fill="#CFD6DC"/>
+                  <path d="M16.1362 2.86697V1.73215C16.1362 0.566474 15.0048 -0.264928 13.8992 0.0779182L4.88574 2.86697H16.1362Z" fill="#CFD6DC"/>
                 </svg>
                 <span>La Carte</span>
               </a>
@@ -79,6 +81,18 @@
           </ul>
         </nav>
 
+        <div class="card bg-primary p-6 rounded-20p overflow-hidden mt-9 min-h-52 h-full lg:hidden relative">
+          <h2 class="text-2xl font-medium max-w-60 text-white mb-1">Obtenez notre offre de bienvenue</h2>
+          <p class="text-base max-w-60 text-white">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+          <img class="w-32 absolute bottom-0 right-0" src="../img/coffee.png" alt="coffee">
+        </div>
+
+        <div class="hero relative mt-12 hidden lg:block" id="#le-restaurant">
+          <div class="absolute top-0 left-0 rounded-xl flex items-center justify-center w-full h-full bg-black/35">
+              <h1 class="max-w-96 text-center text-5xl leading-normal font-semibold text-white"> Le Restaurant L’Expérience</h1>
+          </div>
+          <img class="img-cover rounded-xl w-full rounded-xl overflow-hidden" src="../img/hero.png" alt="Hero">
+        </div>
       </div>
     </main>
 
@@ -104,7 +118,7 @@
 
         <div class="grid grid-cols-1 gap-2 mt-8 lg:grid-cols-3 lg:gap-8 lg:grid">
           <div class="product flex flex-row-reverse lg:grid pb-2 border-b-2 border-solid border-gray lg:border-0" data-type="hot">
-            <img class="img-cover product-img rounded-lg overflow-hidden aspect-square max-w-24 lg:max-w-full lg:aspect-auto" src="img/cafe.png" alt="coffee">
+            <img class="img-cover product-img rounded-lg overflow-hidden aspect-square max-w-24 lg:max-w-full lg:aspect-auto" src="../img/cafe.png" alt="coffee">
             <div>
               <div class="flex items-center justify-between lg:mt-5">
                 <p class="product-title text-lg font-medium">Expresso Italien</p>
@@ -125,7 +139,7 @@
           </div>
 
           <div class="product flex flex-row-reverse lg:grid pb-2 border-b-2 border-solid border-gray lg:border-0" data-type="cold">
-            <img class="img-cover product-img rounded-lg overflow-hidden aspect-square max-w-24 lg:max-w-full lg:aspect-auto" src="img/cafe.png" alt="coffee">
+            <img class="img-cover product-img rounded-lg overflow-hidden aspect-square max-w-24 lg:max-w-full lg:aspect-auto" src="../img/cafe.png" alt="coffee">
             <div>
               <div class="flex items-center justify-between lg:mt-5">
                 <p class="product-title text-lg font-medium">Expresso Français</p>
@@ -146,7 +160,7 @@
           </div>
 
           <div class="product flex flex-row-reverse lg:grid pb-2 border-b-2 border-solid border-gray lg:border-0" data-type="hot">
-            <img class="img-cover product-img rounded-lg overflow-hidden aspect-square max-w-24 lg:max-w-full lg:aspect-auto" src="img/banner.png" alt="coffee">
+            <img class="img-cover product-img rounded-lg overflow-hidden aspect-square max-w-24 lg:max-w-full lg:aspect-auto" src="../img/banner.png" alt="coffee">
             <div>
               <div class="flex items-center justify-between lg:mt-5">
                 <p class="product-title text-lg font-medium">Expresso Anglais</p>
@@ -168,6 +182,67 @@
 
       </div>
     </div>
+
+    <div class="mt-16">
+      <div class="w-container mx-auto ">
+        <div class="flex items-center justify-center h-96 rounded-xl overflow-hidden hidden lg:flex">
+          <div class="flex flex-col justify-between p-8 h-full gradient-red-to-dark-red w-full lg:w-5/12">
+            <div class="max-w-96">
+              <div class="font-bold text-2xl  text-white leading-normal lg:text-32">Obtenez notre<br>offre de bienvenue</div>
+              <div class="text-base text-white leading-normal mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing.</div>
+            </div>
+
+            <div class="flex justify-end"><a class="p-3 bg-white text-primary font-semibold text-base transition-all ease-in-out duration-500 lg:px-5 lg:py-3 hover:opacity-75 rounded-full" href="tel:+">S’inscrire</a></div>
+          </div>
+          <div class="h-full lg:w-7/12"><img class="img-cover" src="../img/banner.png"></div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-16">
+      <div class="w-container max-w-6xl mx-auto">
+        <h2 class="italic font-light text-3xl text-center">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget rhoncus nisi. Donec accumsan efficitur justo,
+        </h2>
+      </div>
+    </div>
+    <div class=" mt-16">
+      <section class="about__content about__content--left">
+        <div class="about__content__wrapper w-full">
+          <div class="about__content__box">
+            <p class="about__content__label">Le Restau</p>
+            <div class="about__content__description">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus volutpat consequat elementum. </p>
+              <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Ut rutrum justo quis velit malesuada elementum. Curabitur lacinia sollicitudin mi, id vestibulum quam consequat vel. </p>
+              <p>Vestibulum tincidunt velit ut egestas molestie. Vestibulum id leo ornare, viverra lorem at, tincidunt est. Suspendisse facilisis dolor non libero ultricies, vel feugiat dolor vestibulum. Proin fermentum a quam a tincidunt. </p>
+              <p>Nullam facilisis tellus at ipsum fringilla imperdiet. Nam convallis augue augue, eu sollicitudin ante faucibus vel.</p>
+            </div>
+          </div>
+          <figure class="about__content_media"> <img class="about__content__media__image" src="../img/about.png"></figure>
+        </div>
+      </section>
+    </div>
+
+    <div class="mt-16 w-container mx-auto hidden lg:block" id="adresse">
+      <div class="banner relative mt-12">
+        <div class="absolute top-16 left-16 rounded-xl max-w-md h-auto bg-white/80 rounded-lg z-20 px-8 py-12">
+          <h1 class="text-5xl leading-none font-semibold text-black "> Le Restaurant</h1>
+          <p class="text-black text-lg leading-normal font-medium mt-10">
+            1360 Lombard Street
+            <br> San Francisco, CA
+            <br><br>
+
+            Mon - Fri, 10am - 9pm
+            <br>Saturday, 11am - 9pm
+            <br>Sunday, 11am - 5pm
+          </p>
+          <div class="mt-10">
+            <a class="text-black text-lg leading-normal font-medium border border-solid border-black py-2 px-4 border-2">Itinéraire</a>
+          </div>
+        </div>
+        <div class="absolute top-0 left-0 rounded-xl flex items-center justify-center w-full h-full bg-black/15"></div>
+        <img class="banner img-cover rounded-xl w-full" src="../img/horaire.png" alt="Hero">
+      </div>
+    </div> 
     
     <div class="modal bg-black/30 fixed top-0 left-0 w-full h-full flex items-end hidden">
       <div class="bg-white h-3/4 rounded-t-xl overflow-hidden w-full shadow-lg relative">
@@ -176,7 +251,7 @@
             <path d="M6 18L18 6M6 6L18 18" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </div>
-        <img class="product-img img h-56 w-full img-cover h-full" src="img/cafe.png" alt="coffee">
+        <img class="product-img img h-56 w-full img-cover h-full" src="../img/cafe.png" alt="coffee">
         <div class="w-container mx-auto">
           <div class="flex items-center justify-between mt-5">
             <p class="product-title text-lg font-medium">Expresso Italien</p>
