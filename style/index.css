@@ -15,3 +15,6 @@
 /* molecules */
 @import "components/molecules/banner.css";
 @import "components/molecules/hero.css";
+
+/* override-vendors */
+@import "components/override-vendors/js.css";

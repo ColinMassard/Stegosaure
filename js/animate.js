@@ -9,11 +9,11 @@ document.addEventListener("DOMContentLoaded", function() {
     radioButtons[i].addEventListener('click', function() {
       for (j = 0; j < products.length; j++) {
         if(this.id === "all"){
-          products[j].classList.remove("hidden")
+          products[j].classList.remove("hidden-js")
         } else if(products[j].getAttribute('data-type') === this.id){
-          products[j].classList.remove("hidden")
+          products[j].classList.remove("hidden-js")
         } else{
-          products[j].classList.add("hidden")
+          products[j].classList.add("hidden-js")
         }
       }
     })
